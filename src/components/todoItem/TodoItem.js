@@ -7,9 +7,9 @@ export class TodoItem extends React.Component {
 
     render() {
         return (
-            <div className="todo-item">
+            <div className="todo-item list-group-item">
                 <div className="todo-item-text">{this.props.text}</div>
-                <Button className="todo-item-button">Dokončit</Button>
+                <Button className="todo-item-button" variant="danger">Dokončit</Button>
             </div>
         );
     }

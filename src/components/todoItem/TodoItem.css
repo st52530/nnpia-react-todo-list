@@ -1,6 +1,5 @@
 .todo-item {
     overflow: auto;
-    border: 1px dashed black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,7 +8,7 @@
 }
 
 .todo-item-text {
-    padding: 1rem;
+    margin-right: 1rem;
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
@@ -17,5 +16,4 @@
 
 .todo-item-button {
     float: right;
-    margin-right: 1rem;
 }
