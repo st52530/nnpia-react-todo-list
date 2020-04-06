@@ -26,6 +26,15 @@ export class ListPage extends React.Component {
         });
     };
 
+    onTodoCompleted = (index) => {
+        let todos = this.state.todos;
+        todos.splice(index, 1);
+
+        this.setState({
+            todos: todos
+        });
+    };
+
     render() {
         return (
             <div className="list-page">
@@ -33,7 +42,7 @@ export class ListPage extends React.Component {
                 <hr />
                 <AddTodo handleClick={this.onTodoAdded.bind(this)}/>
                 <hr />
-                <TodoList todos={this.state.todos} />
+                <TodoList todos={this.state.todos}  onTodoCompleted={this.onTodoCompleted.bind(this)}/>
             </div>
         );
     }

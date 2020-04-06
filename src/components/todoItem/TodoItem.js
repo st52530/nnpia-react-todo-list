@@ -9,7 +9,9 @@ export class TodoItem extends React.Component {
         return (
             <div className="todo-item list-group-item">
                 <div className="todo-item-text">{this.props.text}</div>
-                <Button className="todo-item-button" variant="danger">Dokončit</Button>
+                <Button className="todo-item-button" variant="danger" onClick={() => {
+                    this.props.onTodoCompleted(this.props.index)
+                }}>Dokončit</Button>
             </div>
         );
     }
@@ -17,5 +19,6 @@ export class TodoItem extends React.Component {
 
 TodoItem.propTypes = PropTypes.shape({
     index: PropTypes.number.isRequired,
-    text: PropTypes.string.isRequired
+    text: PropTypes.string.isRequired,
+    onTodoCompleted: PropTypes.func.isRequired
 });
