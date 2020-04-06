@@ -20,6 +20,7 @@ export class TodoList extends React.Component {
 
         return (
             <div>
+                <h2>Seznam</h2>
                 <p>Celkový počet To-dos: <b>{listItems.length}</b></p>
                 {listItems}
             </div>

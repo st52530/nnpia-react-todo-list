@@ -38,7 +38,7 @@ export class ListPage extends React.Component {
     render() {
         return (
             <div className="list-page">
-                <h1>To-do list</h1>
+                <h1>To-do list aplikace</h1>
                 <hr />
                 <AddTodo handleClick={this.onTodoAdded.bind(this)}/>
                 <hr />
