@@ -13,6 +13,11 @@ export class ListPage extends React.Component {
     }
 
     onTodoAdded = (todoText) => {
+        if (!todoText) {
+            alert("Musíte vyplnit text!");
+            return;
+        }
+
         let todos = this.state.todos;
         todos.push(todoText);
 
