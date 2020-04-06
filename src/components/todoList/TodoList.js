@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
 export class TodoList extends React.Component {
 
@@ -8,3 +9,7 @@ export class TodoList extends React.Component {
         );
     }
 }
+
+TodoList.propTypes = {
+    todos: PropTypes.array.isRequired
+};
