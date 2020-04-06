@@ -4,7 +4,7 @@ export class TodoList extends React.Component {
 
     render() {
         return (
-            "Todo list"
+            <h2>To-do list</h2>
         );
     }
 }
