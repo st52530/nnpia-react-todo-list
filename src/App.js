@@ -1,14 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Button from 'react-bootstrap/Button';
+import {ListPage} from "./components/listPage/ListPage";
 
 function App() {
-  return (
-    <div className="App">
-        <Button className="button">Bootstrap button</Button>
-    </div>
-  );
+    return (
+        <ListPage/>
+    );
 }
 
 export default App;
